@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>KUTEERA HOME STAY</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+body{
+    margin:0;
+    font-family:"Segoe UI",Arial;
+    background:#f4f6f9;
+}
+
+header{
+    background:linear-gradient(135deg,#2ecc71,#27ae60);
+    color:#fff;
+    text-align:center;
+    padding:30px;
+}
+
+nav{
+    background:#1e8449;
+    text-align:center;
+    padding:10px;
+}
+
+nav a{
+    color:white;
+    margin:15px;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+section{
+    max-width:1100px;
+    margin:auto;
+    padding:40px 20px;
+}
+
+.card{
+    background:white;
+    padding:25px;
+    border-radius:10px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.1);
+    margin-bottom:30px;
+    position:relative;
+}
+
+.rooms{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
+
+.room{
+    border:1px solid #ddd;
+    padding:15px;
+    border-radius:10px;
+}
+
+.room h3{color:#27ae60}
+
+.gallery img{
+    width:100%;
+    border-radius:10px;
+    margin-bottom:15px;
+}
+
+input, textarea{
+    width:100%;
+    padding:12px;
+    margin-top:10px;
+    border-radius:5px;
+    border:1px solid #ccc;
+}
+
+button{
+    background:#27ae60;
+    color:white;
+    border:none;
+    padding:12px 20px;
+    border-radius:5px;
+    cursor:pointer;
+    font-size:16px;
+}
+
+button:hover{background:#1e8449}
+
+.enquiry-actions{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-top:20px;
+}
+
+.whatsapp-btn{
+    background:#25d366;
+    color:white;
+    padding:12px 22px;
+    border-radius:30px;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+footer{
+    background:#1e8449;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<h1>KUTEERA HOME STAY</h1>
+<p>Private nature stay hosted by Priyanshu 🌿</p>
+</header>
+
+<nav>
+<a href="#about">About</a>
+<a href="#rooms">Stay Options</a>
+<a href="#gallery">Gallery</a>
+<a href="#location">Location</a>
+<a href="#enquiry">Enquiry</a>
+</nav>
+
+<section id="about">
+<div class="card">
+<h2>About Our Homestay</h2>
+<p>
+KUTEERA HOME STAY offers a peaceful private stay surrounded by nature.
+Perfect for families, couples, and groups seeking comfort and privacy.
+</p>
+<ul>
+<li>✔ PRIVATE STAY</li>
+<li>✔ BREAKFAST, LUNCH AND DINNER</li>
+<li>✔ AC ROOM</li>
+<li>✔ WIFI</li>
+<li>✔ TENT STAY</li>
+</ul>
+</div>
+</section>
+
+<section id="rooms">
+<h2>Our Stay Options</h2>
+<div class="rooms">
+<div class="room">
+<h3>AC Room</h3>
+<p>Comfortable private AC room</p>
+</div>
+<div class="room">
+<h3>Non-AC Room</h3>
+<p>Budget friendly stay</p>
+</div>
+<div class="room">
+<h3>Tent Stay</h3>
+<p>Nature experience</p>
+</div>
+</div>
+</section>
+
+<section id="gallery">
+<h2>Gallery</h2>
+<div class="gallery">
+<img src="https://images.unsplash.com/photo-1505691938895-1758d7feb511">
+<img src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2">
+<img src="https://images.unsplash.com/photo-1590490360182-c33d57733427">
+</div>
+</section>
+
+<section id="location">
+<div class="card">
+<h2>Our Location</h2>
+<p>📍 KUTEERA HOME STAY, Hesaraghatta, Bangalore, Karnataka, India</p>
+
+<iframe 
+src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3885.4699391291224!2d77.48114287454902!3d13.132730511326228!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae23a8e1a67f39%3A0x70dd60612e2dd0e7!2sKuteera%20Home%20Stay!5e0!3m2!1sen!2sin!4v1767113204356"
+width="100%" height="300" style="border:0;" allowfullscreen loading="lazy">
+</iframe>
+
+</div>
+</section>
+
+<section id="enquiry">
+<div class="card">
+<h2>Customer Enquiry</h2>
+
+<form onsubmit="sendEnquiry(); return false;">
+<input type="text" id="name" placeholder="Your Name" required>
+<input type="tel" id="phone" placeholder="Phone Number" required>
+
+<label style="margin-top:10px;font-weight:bold;">Date you would like to visit:</label>
+<input type="date" id="visitDate" required>
+
+<textarea id="message" rows="4" placeholder="Your message"></textarea>
+
+<div class="enquiry-actions">
+<button type="submit">Send Enquiry</button>
+
+<a class="whatsapp-btn"
+href="https://wa.me/917619501221?text=Sir%2C%20homestay%20enquiry"
+target="_blank">
+WhatsApp
+</a>
+</div>
+
+</form>
+</div>
+</section>
+
+<footer>
+<p>👤 Owner: Priyanshu</p>
+<p>📞 +91 7619501221</p>
+<p>© 2025 KUTEERA HOME STAY</p>
+</footer>
+
+<script>
+function sendEnquiry(){
+    var name=document.getElementById("name").value;
+    var phone=document.getElementById("phone").value;
+    var date=document.getElementById("visitDate").value;
+    var message=document.getElementById("message").value;
+
+    var text = `Sir, homestay enquiry
+Name: ${name}
+Phone: ${phone}
+Visit Date: ${date}
+Message: ${message}`;
+
+    window.open("https://wa.me/917619501221?text=" + encodeURIComponent(text));
+}
+</script>
+
+</body>
+</html>
